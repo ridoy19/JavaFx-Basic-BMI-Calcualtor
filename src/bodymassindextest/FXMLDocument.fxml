@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="471.0" prefWidth="570.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bodymassindextest.FXMLDocumentController">
+   <children>
+      <GridPane layoutX="98.0" layoutY="104.0" prefHeight="430.0" prefWidth="765.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFF2E7;">
+               <children>
+                  <Text fill="#066b90" layoutX="191.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Check Your BMI">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="displayField" layoutX="151.0" layoutY="83.0" maxHeight="45.0" maxWidth="175.0" minHeight="45.0" minWidth="175.0" prefHeight="45.0" prefWidth="175.0">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="displayField1" layoutX="151.0" layoutY="151.0" maxHeight="45.0" maxWidth="175.0" minHeight="45.0" minWidth="175.0" prefHeight="45.0" prefWidth="175.0">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </TextField>
+                  <Button layoutX="166.0" layoutY="216.0" mnemonicParsing="false" onAction="#handleCalculateAction" prefHeight="39.0" prefWidth="145.0" style="-fx-background-color: #07C6CB;" text="Calculate" textFill="#fcfcfc">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Text fill="#066b90" layoutX="34.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Height (cm/m)">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#066b90" layoutX="33.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Weight (kg)">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="displayField2" layoutX="151.0" layoutY="277.0" maxHeight="45.0" maxWidth="175.0" minHeight="45.0" minWidth="175.0" prefHeight="45.0" prefWidth="175.0">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </TextField>
+                  <Text fill="#066b90" layoutX="36.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BMI Value">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="displayField3" layoutX="151.0" layoutY="331.0" maxHeight="45.0" maxWidth="175.0" minHeight="45.0" minWidth="175.0" prefHeight="45.0" prefWidth="175.0">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </TextField>
+                  <Text fill="#066b90" layoutX="36.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BMI Type">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Text>
+                  <Line endX="100.0" layoutX="287.0" layoutY="50.0" startX="-100.0" />
+                  <Button layoutX="167.0" layoutY="413.0" mnemonicParsing="false" onAction="#handleClearAction" prefHeight="37.0" prefWidth="145.0" style="-fx-background-color: #07C6CB;" text="Clear" textFill="#f8f8f8">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="label" alignment="CENTER" layoutX="133.0" layoutY="386.0" prefHeight="17.0" prefWidth="212.0" />
+                  <TabPane layoutX="345.0" layoutY="84.0" prefHeight="207.0" prefWidth="222.0" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                      <Tab text="BMI Values">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="171.0" prefWidth="131.0">
+                                 <children>
+                                    <GridPane>
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Under Weight" />
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="less than 18.5" GridPane.columnIndex="1" />
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Normal" GridPane.rowIndex="1" />
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="between 18.6 and 24.9" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Over Weight" GridPane.rowIndex="2" />
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="between 25 and 29.9" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Class I Obese" GridPane.rowIndex="3" />
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="between 30 and 34.9" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Class II Obese" GridPane.rowIndex="4" />
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="between 35 and 39.9" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Class III Obese" GridPane.rowIndex="5" />
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="40 or greater" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                      <Tab>
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                        </content>
+                      </Tab>
+                    </tabs>
+                  </TabPane>
+                  <ImageView fitHeight="80.0" fitWidth="77.0" layoutX="36.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../icon-bodybuilding.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
