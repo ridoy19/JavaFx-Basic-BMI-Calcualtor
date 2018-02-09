@@ -20,8 +20,8 @@ import javafx.scene.control.TextField;
  */
 public class FXMLDocumentController implements Initializable {
     
-    double Height;
-    double Weight;
+    private double Height;
+    private double Weight;
     
     @FXML
     private Label label;
