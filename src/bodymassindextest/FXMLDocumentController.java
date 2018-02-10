@@ -56,13 +56,12 @@ public class FXMLDocumentController implements Initializable {
         Height = Double.parseDouble(height);
         String weight = displayField1.getText();
         Weight = Double.parseDouble(weight);
-        if(Height >= 10.2){
+        if(Height >= 10){
             Height = Height / 100;
         }
-        
         double BMI = (Weight/(Height * Height));
+ 
         String Calc_BMI = String.format("%.3f",BMI);
-        
         displayField2.setText(""+Calc_BMI);
         
         //displayField2.setText(""+Math.round (BMI * 1000000.0) / 100.0);
