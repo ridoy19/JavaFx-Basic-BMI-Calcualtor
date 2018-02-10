@@ -56,7 +56,7 @@ public class FXMLDocumentController implements Initializable {
         Height = Double.parseDouble(height);
         String weight = displayField1.getText();
         Weight = Double.parseDouble(weight);
-        if(Height >= 10.2){
+        if(Height > 10){
             Height = Height / 100;
         }
         
