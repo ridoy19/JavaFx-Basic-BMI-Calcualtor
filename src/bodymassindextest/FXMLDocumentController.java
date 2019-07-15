@@ -71,7 +71,7 @@ public class FXMLDocumentController implements Initializable {
             displayField3.setStyle("-fx-control-inner-background: #EFF603;");
             label.setText("You Need To Gain Weight!");
         }
-        if(BMI >= 18.6 && BMI <= 24.9){
+        else if(BMI >= 18.6 && BMI <= 24.9){
             displayField3.setText("Normal Weight");
             displayField3.setStyle("-fx-control-inner-background: #019916;");
             label.setText("You are averge!");
