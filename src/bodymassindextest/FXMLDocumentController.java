@@ -20,8 +20,8 @@ import javafx.scene.control.TextField;
  */
 public class FXMLDocumentController implements Initializable {
     
-    double Height;
-    double Weight;
+    private double Height;
+    private double Weight;
     
     @FXML
     private Label label;
@@ -56,7 +56,8 @@ public class FXMLDocumentController implements Initializable {
         Height = Double.parseDouble(height);
         String weight = displayField1.getText();
         Weight = Double.parseDouble(weight);
-        if(Height >= 10){
+        
+        if(Height > 10){
             Height = Height / 100;
         }
         double BMI = (Weight/(Height * Height));
